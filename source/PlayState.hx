@@ -501,7 +501,41 @@ class PlayState extends MusicBeatState
 					limo.antialiasing = true;
 
 					fastCar = new FlxSprite(-300, 160).loadGraphic(Paths.image('limo/fastCarLol','week4'));
-					// add(limo);
+			}
+			case 'diningarea':
+			{
+					curStage = 'diningarea;
+
+					defaultCamZoom = 0.8;
+
+					var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image(''freddystage/stagecurtains','shared'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.2, 0.2);
+					bg.active = false;
+					bg.setGraphicSize(Std.int(bg.width * 0.8));
+					bg.updateHitbox();
+					add(bg);
+
+					balloons = new FlxSprite().loadGraphic(Paths.image('freddystage/stagecurtains','shared'));
+					balloons.setGraphicSize(Std.int(balloons.width * 0));
+					balloons.x = -580;
+					balloons.y = -200;
+					balloons.visible = true;
+					
+
+					balloons = new FlxSprite().loadGraphic(Paths.image('freddystage/stagecurtains','shared'));
+					balloons.setGraphicSize(Std.int(balloons.width * 0));
+					balloons.x = -580;
+					balloons.y = -200;
+					balloons.visible = true;
+					
+					
+					balloons = new FlxSprite().loadGraphic(Paths.image('freddystage/stagecurtains','shared'));
+					balloons.setGraphicSize(Std.int(balloons.width * 0));
+					balloons.x = -580;
+					balloons.y = -200;
+					balloons.visible = true;		// add(limo);
+		
 			}
 			case 'mall':
 			{
