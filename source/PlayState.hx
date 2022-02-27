@@ -501,7 +501,7 @@ class PlayState extends MusicBeatState
 					limo.antialiasing = true;
 
 					fastCar = new FlxSprite(-300, 160).loadGraphic(Paths.image('limo/fastCarLol','week4'));
-			}
+			}              // add(limo);
 			case 'diningarea':
 			{
 					curStage = 'diningarea;
@@ -534,7 +534,7 @@ class PlayState extends MusicBeatState
 					balloons.setGraphicSize(Std.int(balloons.width * 0));
 					balloons.x = -580;
 					balloons.y = -200;
-					balloons.visible = true;		// add(limo);
+					balloons.visible = true;		
 		
 			}
 			case 'mall':
